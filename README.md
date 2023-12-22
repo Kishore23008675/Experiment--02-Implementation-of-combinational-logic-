@@ -1,5 +1,5 @@
-NAME:RAMYA P
-REF NO:23006111
+NAME:kishore A
+REF NO:23008675
 
 
 # Experiment--02 Implementation of combinational logic
