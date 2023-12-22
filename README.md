@@ -1,5 +1,10 @@
-# Experiment--02-Implementation-of-combinational-logic
-Implementation of combinational logic gates
+NAME:RAMYA P
+REF NO:23006111
+
+
+# Experiment--02 Implementation of combinational logic
+
+
  
 ## AIM:
 To implement the given logic function verify its operation in Quartus using Verilog programming.
@@ -19,15 +24,26 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 ## Logic Diagram
 ## Procedure
 ## Program:
-/*
-Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-## RTL realization
+```
+module exp_2(A,B,C,D,F1);
+input A,B,C,D;
+output F1;
+wire x1,x2,x3,x4,x5;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign F1=x1|x2|x3|x4|x5;
+endmodule
+```
+## RTL realization:
+![image](https://github.com/23006111/Experiment--02-Implementation-of-combinational-logic-/assets/145981696/c4156a49-8f22-4d99-81b6-6521f0970acd)
+## Truth Table:
+![image](https://github.com/23006111/Experiment--02-Implementation-of-combinational-logic-/assets/145981696/69ed9582-a61d-4bc2-94a2-0f614504a401)
+## Timing line:
+![image](https://github.com/23006111/Experiment--02-Implementation-of-combinational-logic-/assets/145981696/c0edea06-8204-4a21-bf7e-af5ecfbf4bec)
 
-## Output:
-## RTL
-## Timing Diagram
+
 ## Result:
 Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
